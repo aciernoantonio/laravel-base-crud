@@ -18,7 +18,10 @@
                 <td scope="row"><img src="{{$comic->thumb}}" alt=""></td>
                 <td>{{$comic->title}}</td>
                 <td>{{$comic->description}}</td>
-                <td> <a href="{{route('comics.show', $comic->id)}}">View</a>  - Edit - Delete</td>
+                <td>
+                    <a href="{{route('comics.show', $comic->id)}}">View</a>
+                    <a href="{{route('comics.create')}}"></a>  - Edit - Delete
+                </td>
             </tr>  
         @endforeach
         
